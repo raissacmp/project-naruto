@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
 
 body,
 h1,
@@ -23,10 +23,16 @@ ul {
 }
 
 body {
-  background: linear-gradient(90deg, rgba(2,0,36,1) 21%, rgba(121,46,9,1) 52%, rgba(255,145,0,1) 83%, rgba(255,145,0,1) 96%);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 21%,
+    rgba(121, 46, 9, 1) 52%,
+    rgba(255, 145, 0, 1) 83%,
+    rgba(255, 145, 0, 1) 96%
+  );
   color: #fff;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .logo {
@@ -49,7 +55,11 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
- 
+  background: #d35303;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .menu {
@@ -62,14 +72,14 @@ body {
   color: #ffa500;
 }
 
-.imageSlide{
+.imageSlide {
   height: 300px;
   width: 200px;
   border-radius: 5px;
   margin-bottom: 5px;
 }
 
-.list-imageSlide{
+.list-imageSlide {
   height: 500px;
   overflow-y: scroll;
   width: fit-content;
@@ -79,20 +89,64 @@ body {
   width: 5px;
 }
 
-.list-imageSlide::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px transparent; 
+.list-imageSlidePersonagens::-webkit-scrollbar{
+  height: 10px
+}
+
+.list-imageSlide::-webkit-scrollbar-track, .list-imageSlidePersonagens::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px transparent;
   border-radius: 10px;
 }
- 
 
-.list-imageSlide::-webkit-scrollbar-thumb {
+.list-imageSlide::-webkit-scrollbar-thumb, .list-imageSlidePersonagens::-webkit-scrollbar-thumb {
   background: #d74b0f;
   border-radius: 10px;
 }
 
-.grid-section{
+.grid-section {
   width: 73%;
   margin: 0 auto;
-  margin-top: 80px;
-}  
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+}
 
+.container-naruto-description {
+  width: 50%;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.title-personagens, .title-faq {
+  text-align: center;
+  margin: 100px 0px 50px 0px
+}
+
+.imageSlidePersonagens {
+  min-height: 300px;
+  min-width: 200px;
+  max-height: 300px;
+  max-width: 200px;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.list-imageSlidePersonagens {
+  width: 73%;
+  overflow-x: scroll;
+  display: flex;
+  margin: 0 auto;
+}
+
+.faq{
+  text-align: center;
+}
+
+.text-copy{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d35303;
+  margin-top: 70px;
+}
